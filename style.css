@@ -1,12 +1,192 @@
 * {
 margin: 0;
 padding: 0;
-    }
+list-style: none;
+text-decoration: none;
+font-family: "Montserrat", sans-serif;
+}
+
+h1,h2,h3, h4 {
+color: #152237;
+}
+
+/* HEADER */
+
+a {
+    color: white;
+    cursor: pointer;
+}
 
 nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background: #152237;
+    padding: 12px;
 }
 
 nav img {
-width: 110px;
-    }
+width: 90px;
+}
+
+nav a {
+font-size: 0.9em;
+}
+
+.search-container {
+    width: 477px;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    position: relative;
+}
+
+#search {
+    background: transparent;
+    color: white;
+    font-size: 0.8em;
+    padding: 5px;
+    outline: none;
+    border: solid 1px white;
+    width: 100%;
+    border-radius: 4px;
+}
+
+#search::placeholder {
+color: white;
+font-weight: 600;
+}
+
+.fa-magnifying-glass {
+    position: absolute;
+    font-size: 0.8em;
+    color: white;
+    right: 5px;
+    top: 14px;
+    cursor: pointer;
+}
+
+.btn {
+    padding: 8px;
+    width: 90px;
+    background: white;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-sign-up {
+background: #44DD8A;
+background: linear-gradient(90deg, rgba(68, 221, 138, 1) 19%, rgba(21, 183, 226, 1) 100%);
+}
+
+/* HEADER CONTAINER */
+
+.header-container {
+    height: 451px;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      90deg,
+      rgba(68, 221, 138, 0.8) 19%,
+      rgba(21, 183, 226, 0.8) 100%
+    ),
+    url("/assets/bg-header.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.header-text h1 {
+    font-weight: 800;
+    color: #152237;
+    margin-bottom: 5px;
+}
+
+.header-text p  {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.header-text button {
+    width: 120px;
+    padding: 10px;
+    font-weight: 500;
+}
+
+/* FORMATION POPULAIRE CONTAINER */
+
+.popular-container {
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.popular-container h2 {
+    font-weight: 800;
+    margin-left: 90px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    margin-top: 50px;
+    position: relative;
+}
+
+.card-img {
+    width: 305px;
+    height: 206px;
+    background-color: #44DD8A;
+    margin-bottom: 30px;
+}
+
+.card-price {
+    position: absolute;
+    display: flex;
+    top: 190px;
+    right: 15px;
+    background-color: #152237;
+    color: white;
+    font-weight: bold;
+    height: 31px;
+    width: 120px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.card-price s {
+    font-weight: lighter;
+    text-decoration:line-through;
+    font-size: 0.8em;
+}
+
+.fa-star {
+color: #FFC700;
+margin: 8px 0;
+}
+
+.card-info  h3{
+    margin-bottom: 10px;
+}
+
+.card-text  {
+    width: 280px;
+}
+
+.fa-transparant {
+opacity: 50%;
+}
+
+.btn-formations {
+background-color: #152237;
+width: 225px;
+color: white;
+}

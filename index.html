@@ -1,46 +1,140 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Klivio Plateforme de formations en ligne</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <a href="#"><img src="/assets/logo.png" alt="Logo KLivio"></a>
-            <a href="#">Les formations</a>
-            <input type="text" name="search" id="search" placeholder="Rechercher">
-            <a href="#"><button class="btn">Connexion</button></a>
-            <a href="#"><button class="btn">Inscription</button></a>
-        </nav>
-
-        <div class="header-container">
-            <h1>Klivio l'allié de votre progression</h1>
-            <p>Les meilleurs formations sur le développement personnel</p>
-            <a href="#"><button class="btn">En savoir plus</button></a>
+      <nav>
+        <a href="#"><img src="/assets/logo.png" alt="Logo KLivio" /></a>
+        <a href="#">Les formations</a>
+        <div class="search-container">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Rechercher"
+          />
+          <i class="fa-solid fa-magnifying-glass"></i>
         </div>
+
+        <div class="btn-nav">
+          <a href="#"><button class="btn">Connexion</button></a>
+          <a href="#"><button class="btn btn-sign-up">Inscription</button></a>
+        </div>
+      </nav>
+
+      <div class="header-container">
+        <div class="header-text">
+          <h1>Klivio, l'allié de votre progression</h1>
+          <p>Les meilleurs formations sur le développement personnel</p>
+          <a href="#"><button class="btn">En savoir plus</button></a>
+        </div>
+      </div>
     </header>
-<div class="container">
-    <h3>Les formations populaires</h3>
-    <div class="card-container">
+    <div class="popular-container">
+      <h2>Les formations populaires</h2>
+      <div class="card-container">
         <div class="card">
-            <div class="card-img"></div>
-            <div class="card-price">15,99€ <s>60€</s></div>
-            <h4 >Parler en public</h4>
+          <div class="card-img"></div>
+          <div class="card-price">
+            <p>15,99 €</p>
+            <s>60€</s>
+          </div>
+          <div class="card-info">
+            <h3>Parler en public</h3>
             <p>Sonia Lefèvre | Coach prise de parole</p>
             <div class="stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
             </div>
-            <p>Gagnez en aisance et captez votre auditoire</p>
+            <p class="card-text">Gagnez en aisance et captez votre auditoire</p>
+          </div>
         </div>
+
+        <div class="card">
+          <div class="card-img"></div>
+          <div class="card-price">
+            <p>15,99 €</p>
+            <s>60€</s>
+          </div>
+          <div class="card-info">
+            <h3>Gérer le stress</h3>
+            <p>Lucie Garnier | Formatrice</p>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star fa-transparant"></i>
+            </div>
+            <p class="card-text">Apprenez à rester serein face aux défis</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img"></div>
+          <div class="card-price">
+            <p>15,99 €</p>
+            <s>60€</s>
+          </div>
+          <div class="card-info">
+            <h3>Travailler en équipe</h3>
+            <p>David Moreau | Expert</p>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="card-text">Collaborez efficacement, même à distance</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img"></div>
+          <div class="card-price">
+            <p>15,99 €</p>
+            <s>60€</s>
+          </div>
+          <div class="card-info">
+            <h3>Gérer son temps</h3>
+            <p>Claire Dumas | Coach organisation</p>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star fa-transparant"></i>
+            </div>
+            <p class="card-text">
+              Optimisez vos journées et gagnez en efficacité
+            </p>
+          </div>
+        </div>
+      </div>
+      <a href="#"><button class="btn btn-formations">Voir plus de formations</button></a>
+
     </div>
-</div>
-</body>
+  </body>
 </html>
