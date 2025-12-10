@@ -8,29 +8,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
       integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="style.css" />
+      referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
     <header>
       <nav>
-        <a href="#"><img src="/assets/logo.png" alt="Logo KLivio" /></a>
+        <a href="#"><img src="/assets/logo.png" alt="Logo KLivio"/></a>
         <a href="#">Les formations</a>
         <div class="search-container">
-          <input
-            type="text"
-            name="search"
-            id="search"
-            placeholder="Rechercher"
-          />
+          <input type="text" name="search" id="search" placeholder="Rechercher"/>
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
 
@@ -48,17 +41,20 @@
         </div>
       </div>
     </header>
-    <div class="popular-container">
-      <h2>Les formations populaires</h2>
+    
+    <div class="formation-container">
+      <div class="title-formation">
+        <h2>Les formations populaires</h2>
+      </div>
       <div class="card-container">
         <div class="card">
           <div class="card-img"></div>
           <div class="card-price">
             <p>15,99 €</p>
-            <s>60€</s>
+            <s class="price-barre">60€</s>
           </div>
           <div class="card-info">
-            <h3>Parler en public</h3>
+            <h3 class="theme">Parler en public</h3>
             <p>Sonia Lefèvre | Coach prise de parole</p>
             <div class="stars">
               <i class="fa-solid fa-star"></i>
@@ -75,18 +71,16 @@
           <div class="card-img"></div>
           <div class="card-price">
             <p>15,99 €</p>
-            <s>60€</s>
+            <s class="price-barre">60€</s>
           </div>
           <div class="card-info">
-            <h3>Gérer le stress</h3>
+            <h3 class="theme">Gérer le stress</h3>
             <p>Lucie Garnier | Formatrice</p>
-            <div class="stars">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star fa-transparant"></i>
-            </div>
             <p class="card-text">Apprenez à rester serein face aux défis</p>
           </div>
         </div>
@@ -95,10 +89,10 @@
           <div class="card-img"></div>
           <div class="card-price">
             <p>15,99 €</p>
-            <s>60€</s>
+            <s class="price-barre">60€</s>
           </div>
           <div class="card-info">
-            <h3>Travailler en équipe</h3>
+            <h3 class="theme">Travailler en équipe</h3>
             <p>David Moreau | Expert</p>
             <div class="stars">
               <i class="fa-solid fa-star"></i>
@@ -115,10 +109,10 @@
           <div class="card-img"></div>
           <div class="card-price">
             <p>15,99 €</p>
-            <s>60€</s>
+            <s class="price-barre">60€</s>
           </div>
           <div class="card-info">
-            <h3>Gérer son temps</h3>
+            <h3 class="theme">Gérer son temps</h3>
             <p>Claire Dumas | Coach organisation</p>
             <div class="stars">
               <i class="fa-solid fa-star"></i>
@@ -133,8 +127,135 @@
           </div>
         </div>
       </div>
-      <a href="#"><button class="btn btn-formations">Voir plus de formations</button></a>
+      <a href="#" class="link-formations">
+        <button class="btn btn-formations btn-">Voir plus de formations</button>
+      </a>
+    </div>
 
+
+    <div class="formation-container recent-container">
+      <div class="title-formation">
+      <h2 class="title-recent">Les formations récentes</h2>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-img"></div>
+          <div class="card-price price-recent">
+            <p>15,99 €</p>
+            <s class="price-barre">60€</s>
+          </div>
+          <div class="card-info">
+            <h3 class="theme theme-white">Mieux communiquer</h3>
+            <p>Julien Martel | Coach en comm.</p>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="card-text">Améliorer vos échanges et votre impact relationnel</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img"></div>
+          <div class="card-price price-recent">
+            <p>15,99 €</p>
+            <s class="price-barre">60€</s>
+          </div>
+          <div class="card-info">
+            <h3 class="theme theme-white">Maîtriser ses émotions</h3>
+            <p>Amel Benali | Psy. du travail</p>
+            <!-- <div class="stars"> -->
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star fa-transparant"></i>
+            <!-- </div> -->
+            <p class="card-text">Développez calme et intelligence émotionnelle</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img"></div>
+          <div class="card-price price-recent">
+            <p>15,99 €</p>
+            <s class="price-barre">60€</s>
+          </div>
+          <div class="card-info">
+            <h3 class="theme theme-white">Résoudre les problèmes</h3>
+            <p>Thomas Rivière | Expert</p>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="card-text">Analysez, décidez et trouvez des solutions durables</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img"></div>
+          <div class="card-price price-recent">
+            <p>15,99 €</p>
+            <s class="price-barre">60€</s>
+          </div>
+          <div class="card-info">
+            <h3 class="theme theme-white">Leadership positif</h3>
+            <p>Marc nguyen | Consultant</p>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star fa-transparant"></i>
+            </div>
+            <p class="card-text">
+              Inspirez, motivez et fédérez votre équipe</p>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="link-formations">
+        <button class="btn btn-formations btn-white">Voir plus de formations</button>
+      </a>
+    </div>
+    <section class="feedback-container">
+      <h1>Avis clients</h1>
+      <div class="avis-container">
+        <div class="avis">
+            <img src="./assets/juliette.png" alt="Photo de Juliette">
+          <div class="avis-text">
+            <h3 class="avis-name">Juliette</h3>
+             <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star"></i>
+             <div class="avis-text">
+              <p>J’ai trouvé le parcours très bien structuré : vidéos courtes, quizes pertinents et projets pratiques qui m’ont permis d’appliquer immédiatement les notions. L’interface est claire et la progression est motivante — parfait pour se former en autonomie.</p>
+             </div>
+          </div>
+        </div>
+        <div class="avis">
+            <img src="./assets/camille.png" alt="Photo de Juliette">
+          <div class="avis-text">
+            <h3 class="avis-name">Camille</h3>
+             <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star"></i>
+             <div class="avis-text">
+              <p>Bon équilibre entre théorie et pratique. Les chapitres sont détaillés, et le support et les corrections automatiques ont vraiment aidé. Idéal pour démarrer et progresser rapidement.</p>
+             </div>
+          </div>
+        </div>
+      </div>
+    </section>
     </div>
   </body>
 </html>
