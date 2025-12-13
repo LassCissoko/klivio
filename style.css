@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box; 
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -394,7 +394,7 @@ margin-bottom: 50px;
 flex: 1;
 }
 
-.contact-form input, 
+.contact-form input,
 .contact-form textarea {
     padding: 15px;
     border: none;
@@ -406,7 +406,7 @@ flex: 1;
     outline: none;
 }
 
-.contact-form input::placeholder, 
+.contact-form input::placeholder,
 .contact-form textarea::placeholder {
     color: white;
 }
@@ -429,52 +429,89 @@ flex: 1;
 /* FOOTER */
 
 footer {
-background-color: #152237;
-color: white;
-height: 489px;
+    position: relative;
+    background-color: #152237;
+    color: white;
+    height: 489px;
+}
+
+.line-top-footer {
+background: linear-gradient(90deg, rgba(68, 221, 138, 1) 19%, rgba(21, 183, 226, 1) 100%);
+height: 18px;
 }
 
 .footer-top {
-display: flex;
-justify-content: space-around;
-padding-top: 80px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px;
+    gap: 200px;
 }
 
 .footer-logo {
-display: flex;
-align-items: center;
-width: 243px;
-height: 87px;
+    display: flex;
+    align-items: center;
+    width: 243px;
+    height: 87px;
 }
 
 .list-footer h4 {
-margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .infos-footer {
-display: flex;
-justify-content: space-between;
-gap: 190px;
+    display: flex;
+    justify-content: space-between;
+    gap: 190px;
 }
 
 .list-footer li {
-text-transform: uppercase;
-font-weight: 400;
-padding: 3px;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 3px;
 }
 
 .list-footer p {
-line-height: 25px;
+    line-height: 25px;
 }
 
 .info-text {
-width: 230px;
-display: flex;
-column-gap: 20px;
-padding-top: 20px;
+    width: 230px;
+    display: flex;
+    column-gap: 20px;
+    align-items: start;
+    margin-top: 14px;
 }
 
 .btn-footer {
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.line-footer {
+    position: absolute;
+    height: 2px;
+    width: 90%;
+    background-color: #44DD8A;
+    left: 5%;
+    bottom: 40%;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin: 90px;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.socials-icons {
+    font-size: 35px;
 }
